@@ -481,26 +481,26 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #1B1B1B;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #1B1B1B;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #1B1B1B;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #1B1B1B;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
+  color: #1B1B1B;
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
@@ -631,6 +631,7 @@ a:hover {
 .intro .intro-subtitle {
   font-size: 1.5rem;
   font-weight: 300;
+  color: rgb(12, 191, 12);
 }
 
 .intro .text-slider-items {
@@ -1220,6 +1221,7 @@ footer .credits a {
 
   .intro .intro-subtitle {
     font-size: 2.5rem;
+    color: rgb(12, 191, 12);
   }
 
   .intro-single .intro-title {
