@@ -16,6 +16,41 @@ const projects = [
     image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     github: "https://github.com/njiva-niaina",
     live: "#"
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React and Node.js",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/njiva-niaina",
+    live: "#"
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React and Node.js",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/njiva-niaina",
+    live: "#"
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React and Node.js",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/njiva-niaina",
+    live: "#"
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React and Node.js",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/njiva-niaina",
+    live: "#"
+  },
+  {
+    title: "E-commerce Platform",
+    description: "Full-stack e-commerce solution with React and Node.js",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    github: "https://github.com/njiva-niaina",
+    live: "#"
   }
 ];
 

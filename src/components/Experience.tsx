@@ -61,12 +61,6 @@ const experiences = [
     period: "August 2016 - June 2017",
     description: "Developed VR and AR applications, including refactoring iDome simulations for cinema experiences. Designed shaders in GLSL and worked on simulation management systems for EON Reality's office (Java, Unity 3D)."
   },
-  {
-    title: "Pianist",
-    company: "Various Venues",
-    period: "January 2015 - September 2018",
-    description: "Performed at multiple venues, including Sands Hotel, Le Méridien, Le Piano Rouge, and Le Loft Parisien."
-  }
 ];
 
 
