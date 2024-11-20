@@ -9,7 +9,7 @@ export default function Contact() {
   });
 
   return (
-    <section className="py-20 bg-gray-800" id="contact">
+    <section className="py-20" id="contact">
       <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

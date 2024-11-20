@@ -8,7 +8,7 @@ export default function About() {
   });
 
   return (
-    <section className="py-20 bg-gray-900" id="about">
+    <section className="py-20" id="about">
       <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

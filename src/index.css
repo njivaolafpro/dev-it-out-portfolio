@@ -13,7 +13,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #111827;
+  background-color: #004c4f;
   color: white;
   overflow-x: hidden;
 }
@@ -38,10 +38,10 @@ canvas {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6;
+  background: #004c4f;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #004c4f;
 }

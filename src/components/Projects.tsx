@@ -26,7 +26,7 @@ export default function Projects() {
   });
 
   return (
-    <section className="py-20 bg-gray-900" id="projects">
+    <section className="py-20" id="projects">
       <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}

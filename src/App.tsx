@@ -5,12 +5,14 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import ClientBarSection from './components/ClientBarSection';
+import Navbar from './components/NavBar';
 
 function App() {
   const mainRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div ref={mainRef} className="bg-gray-900">
+    <div ref={mainRef}>
+      <Navbar/>
       <Home3DSpline />
       <About />
       <ClientBarSection/>
