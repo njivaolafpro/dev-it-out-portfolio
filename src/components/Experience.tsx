@@ -71,7 +71,7 @@ export default function Experience() {
   });
 
   return (
-    <section className="py-20 bg-blue-duck" id="experience">
+    <section className="py-20 bg-beige" id="experience">
       <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -79,7 +79,7 @@ export default function Experience() {
         transition={{ duration: 0.8 }}
         className="container mx-auto px-4"
       >
-        <h2 className="text-3xl font-bold text-white mb-12">Experience</h2>
+        <h2 className="text-3xl font-bold text-black mb-12">Experience</h2>
         <div className="max-w-3xl space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
@@ -90,10 +90,10 @@ export default function Experience() {
               className="relative pl-8 border-l-2 border-blue-500"
             >
               <div className="absolute w-4 h-4 bg-blue-500 rounded-full -left-[9px] top-0"></div>
-              <h3 className="text-xl font-semibold text-white">{exp.title}</h3>
+              <h3 className="text-xl font-semibold text-black">{exp.title}</h3>
               <p className="text-blue-400 mb-2">{exp.company}</p>
               <p className="text-gray-400 text-sm mb-2">{exp.period}</p>
-              <p className="text-gray-300">{exp.description}</p>
+              <p className="text-black">{exp.description}</p>
             </motion.div>
           ))}
         </div>

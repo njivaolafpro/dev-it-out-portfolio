@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        'blue-duck': '#004c4f',
+        'beige': '#f3eecd',
       },
     },
   },
