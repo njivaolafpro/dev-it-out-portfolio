@@ -3,12 +3,13 @@ import ClientBar from "../ClientBar";
 
 
 const clients = [
-    { name: "France TV", logo: "https://www.france.tv/image/logo/1000/1000/l/l/3/07d5df2f-phpins3ll.png" },
-    { name: "Planity", logo: "/logos/client-b.png" },
-    { name: "Emeria", logo: "/logos/client-c.png" },
-    { name: "Spaycial", logo: "/logos/client-d.png" },
-    { name: "Bolk", logo: "/logos/client-d.png" },
-    { name: "EON Reality", logo: "/logos/client-d.png" },
+  { name: "Emeria", logo: "/logos/Emeria_logo.jpg" },
+  { name: "Superprof", logo: "/logos/logo-superprof.png"},
+    { name: "France TV", logo: "/logos/ftv.png" },
+    { name: "Planity", logo: "/logos/planity.png" },
+    { name: "Spaycial", logo: "/logos/spaycial.png" },
+    { name: "Bolk", logo: "/logos/bolk.jpeg" },
+    { name: "EON Reality", logo: "/logos/eon.jpg" },
   ];
 const ClientBarSection: React.FC = () => {
     return (    <div className="items-center justify-center">
