@@ -19,13 +19,13 @@ export default function About() {
         <h2 className="text-3xl font-bold text-black mb-8">About Me</h2>
         <div className="max-w-3xl">
           <p className="text-black mb-6">
-            I'm a passionate Full Stack Developer with expertise in building modern web applications.
-            Currently working at Bocasay Madagascar, I specialize in developing robust solutions using cutting-edge technologies.
+            I'm a seasoned Full Stack Developer with 8 years of experience building dynamic and scalable web applications.
+            I specialize in API development, API integration, real-time applications, and finance-related systems 
+            such as billing and contract APIs.
           </p>
           <p className="text-black mb-6">
-            My expertise spans across both frontend and backend development, with a strong foundation in
-            React, Node.js, and various modern web technologies. I have a particular interest in creating
-            scalable applications and solving complex technical challenges.
+            My work spans various industries including real estate, food tech, and fintech, where I've successfully 
+            delivered robust solutions tailored to unique business needs.
           </p>
           <div className="grid grid-cols-2 gap-6 mt-8">
             <div>
