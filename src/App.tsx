@@ -14,10 +14,9 @@ function App() {
     <div ref={mainRef}>
       <Navbar/>
       <Home3DSpline />
-      <ClientBarSection/>
       <About />
       <Experience />
-      <Projects />
+      <ClientBarSection/>
       <Contact />
     </div>
   );

@@ -119,7 +119,7 @@ export default function ExperienceTimeline() {
 
                 {/* Experience Content */}
                 <div
-                  className={`relative bg-white shadow-lg rounded-lg p-6 w-full md:w-5/12 flex items-center gap-4 ${
+                  className={`relative shadow-lg rounded-lg p-6 w-full md:w-5/12 flex items-center gap-4 ${
                     index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
                   }`}
                 >
