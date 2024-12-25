@@ -1,0 +1,28 @@
+/* Ensure text and spacing scale down for smaller screens */
+@media (max-width: 768px) {
+    .container {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    .text-sm {
+      font-size: 0.875rem;
+    }
+  
+    .text-base {
+      font-size: 1rem;
+    }
+  
+    .sm\\:text-xl {
+      font-size: 1.25rem;
+    }
+  
+    .rounded-lg {
+      padding: 1rem;
+    }
+  
+    .space-y-12 > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  

@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-gray-900 text-white shadow-lg z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo or Branding */}
-        <div className="text-2xl font-bold cursor-pointer">Njiva Olaf Ranaivoson</div>
+        <div className="text-2xl font-bold cursor-pointer">Dev It Out</div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-8">
