@@ -25,4 +25,25 @@
       margin-bottom: 1rem;
     }
   }
-  
+  /* Add these styles to your experience.style.css file */
+
+/* Add these styles to your experience.style.css file */
+
+/* Apply the overlay only to the background image */
+.experience-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.605); /* Dark semi-transparent overlay */
+  z-index: 0; /* Overlay stays below the content */
+  border-radius: inherit; /* Match the card's rounded corners */
+}
+
+/* Ensure the content stays above the overlay */
+.relative .z-10 {
+  position: relative;
+  z-index: 10;
+}
+
