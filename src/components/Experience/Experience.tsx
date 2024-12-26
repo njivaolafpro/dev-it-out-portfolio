@@ -124,9 +124,9 @@ const experiences = [
   },
 ];
 export default function ExperienceTimeline() {
-  const [flipped, setFlipped] = useState(null);
+  const [flipped, setFlipped] = useState<number|null>(null);
 
-  const handleFlip = (index) => {
+  const handleFlip = (index: number) => {
     if (flipped === index) {
       setFlipped(null);
     } else {
@@ -140,7 +140,7 @@ export default function ExperienceTimeline() {
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
           My Experience
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {experiences.map((exp, index) => (
             <div
               key={index}

@@ -63,7 +63,7 @@ export default function About() {
               key={index}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
-              className="flex flex-col items-center justify-center bg-gradient-to-tl from-gray-100 to-gray-200 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-200"
+              className="flex flex-col items-center justify-center bg-beige from-gray-100 to-gray-200 shadow-lg rounded-lg p-4 hover:shadow-xl transition-shadow duration-200"
             >
               <img
                 src={techno.image}

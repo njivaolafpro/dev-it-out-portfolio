@@ -4,7 +4,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        'beige': '#f3eecd',
+        'beige': {
+          DEFAULT: '#f3eecd',
+          light: '#faf7e6'
+        }
       },
     },
   },
