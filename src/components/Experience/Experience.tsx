@@ -85,6 +85,7 @@ const experiences = [
     period: "August 2020 - June 2021",
     description: "Implemented BDD testing modules with Cucumber and Gherkin, optimized API performance, and worked on authentication and service proxy microservices. Managed environment deployment with Jenkins, Docker, and Kubernetes. Contributed to user consent management and marketing email services.",
     logo: "logos/ftv.png",
+    backgroundImage: "url('backgrounds/ftv.png')",
     badges: [
       "Koa Js",
       "Express Js",
@@ -101,24 +102,21 @@ const experiences = [
     company: "Celaneo - Agence Digitale",
     period: "November 2019 - August 2020",
     description: "Integrated third-party banking data providers via API (PSD2) into a Node.js backend. Developed OAuth authentication for user login and created RESTful services.",
-    logo: "logos/spaycial.png"
+    logo: "logos/spaycial.png",
+    backgroundImage: "url('backgrounds/spaycial.png')",
   },
   {
     title: "Associate Software Engineer",
     company: "AGILEUM",
-    period: "January 2018 - October 2019",
+    period: "July 2017 - October 2019",
+    backgroundImage: "url('backgrounds/agileum.png')",
     description: "Launched mobile applications for the government of Mauritius, including MoKouran, School App, and Emergency Alert. Created web and mobile app back-ends using Loopback (Node.js), Angular/ReactJS, and Xamarin/React Native for mobile solutions. Deployed systems on Linux/Windows and incorporated DevOps practices (Docker/Jenkins)."
-  },
-  {
-    title: "Full Stack Developer",
-    company: "AGILEUM",
-    period: "July 2017 - December 2017",
-    description: "Developed web and mobile applications with a focus on cross-platform solutions using Angular/React and Xamarin."
   },
   {
     title: "Intern (Developer) - Augmented and Virtual Reality",
     company: "EON Reality",
     period: "August 2016 - June 2017",
+    backgroundImage: "url('backgrounds/eon-reality.png')",
     description: "Developed VR and AR applications, including refactoring iDome simulations for cinema experiences. Designed shaders in GLSL and worked on simulation management systems for EON Reality's office (Java, Unity 3D).",
     logo: "logos/eon.jpg"
   },

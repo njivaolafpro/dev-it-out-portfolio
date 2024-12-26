@@ -3,7 +3,6 @@ import Home3DSpline from './components/Home3DSpline';
 import About from './components/About';
 import Experience from './components/Experience/Experience';
 import Contact from './components/Contact';
-import ClientBarSection from './components/ClientBarSection';
 import Navbar from './components/NavBar';
 
 function App() {
@@ -15,7 +14,6 @@ function App() {
       <Home3DSpline />
       <About />
       <Experience />
-      <ClientBarSection/>
       <Contact />
     </div>
   );
