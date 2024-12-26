@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
 import './experience.style.css';
 
 const experiences = [
@@ -123,88 +123,57 @@ const experiences = [
     logo: "logos/eon.jpg"
   },
 ];
-
 export default function ExperienceTimeline() {
+  const [flipped, setFlipped] = useState(null);
+
+  const handleFlip = (index) => {
+    if (flipped === index) {
+      setFlipped(null);
+    } else {
+      setFlipped(index);
+    }
+  };
+
   return (
-    <section
-      className="py-20 bg-gradient-to-br from-gray-100 via-white to-gray-200"
-      id="experience"
-    >
+    <section className="py-20 bg-gradient-to-br from-gray-100 via-white to-gray-200" id="experience">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-800 mb-12">
           My Experience
         </h2>
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute top-0 left-6 sm:left-8 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-yellow-500"></div>
-  
-          <div className="space-y-12">
-            {experiences.map((exp, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`relative flex flex-col sm:flex-row items-start md:items-center ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="experience-card-container relative" // Add relative positioning
+              onClick={() => handleFlip(index)}
+            >
+              <div
+                className={`experience-card ${flipped === index ? 'flipped' : ''}`}
               >
-                {/* Timeline Dot */}
-                <div
-                  className={`absolute w-6 h-6 bg-yellow-500 rounded-full border-4 border-white z-10 left-4 sm:left-6 md:left-1/2 transform md:-translate-x-1/2`}
-                ></div>
-  
-                {/* Experience Content */}
-                <div
-                  className={`relative shadow-md rounded-lg p-4 sm:p-6 w-full sm:w-10/12 md:w-5/12 from-yellow-200 ${
-                    index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"
-                  }`}
-                  style={{
-                    backgroundImage: exp.backgroundImage,
-                    backgroundSize: "cover",
-                    position: "relative",
-                  }}
-                >
-                  {/* Logo */}
-                  {/* <div className="flex-shrink-0 w-14 h-14 sm:w-16 sm:h-16 overflow-hidden shadow-md rounded-full flex items-center justify-center bg-gray-50 mb-4 sm:mb-0 sm:me-4">
-                    <img
-                      src={exp.logo}
-                      alt={`${exp.company} logo`}
-                      className="object-contain max-w-[70%] max-h-[70%]"
-                    />
-                  </div> */}
-  
-                  {/* Text Content */}
-                  <div className="z-10 relative">
-                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-2">
-                      {exp.title}
-                    </h3>
-                    <p className="text-blue-300 font-medium text-sm sm:text-base mb-2">
-                      {exp.company}
-                    </p>
-                    <p className="text-xs sm:text-sm text-white mb-4">
-                      {exp.period}
-                    </p>
-                    <p className="text-sm sm:text-base text-white mb-4">
-                      {exp.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {exp.badges?.map((badge, i) => (
-                        <span
-                          key={i}
-                          className="bg-yellow-100 text-yellow-800 text-xs sm:text-sm font-medium px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300"
-                        >
-                          {badge}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                  {/* Background overlay using ::before */}
-                  <div className="experience-card-overlay"></div>
+                {/* Front of the card */}
+                <div className="experience-card-front" style={{ backgroundImage: exp.backgroundImage, backgroundSize: "cover", backgroundPosition: "center" }}>
                 </div>
-              </motion.div>
-            ))}
-          </div>
+
+                {/* Back of the card */}
+                <div className="experience-card-back">
+                  <h3 className="text-xl font-semibold text-gray-800">{exp.title}</h3>
+                  <p className="text-blue-500 font-medium">{exp.company}</p>
+                  <p className="text-sm text-gray-500">{exp.period}</p>
+                  <p className="text-sm text-gray-700">{exp.description}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {exp.badges?.map((badge, i) => (
+                      <span
+                        key={i}
+                        className="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                      >
+                        {badge}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

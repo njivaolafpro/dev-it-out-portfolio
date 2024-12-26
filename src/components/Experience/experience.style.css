@@ -1,49 +1,86 @@
-/* Ensure text and spacing scale down for smaller screens */
-@media (max-width: 768px) {
-    .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
-    }
-  
-    .text-sm {
-      font-size: 0.875rem;
-    }
-  
-    .text-base {
-      font-size: 1rem;
-    }
-  
-    .sm\\:text-xl {
-      font-size: 1.25rem;
-    }
-  
-    .rounded-lg {
-      padding: 1rem;
-    }
-  
-    .space-y-12 > *:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
-  /* Add these styles to your experience.style.css file */
+.experience-card-container {
+  perspective: 1000px; /* Enables 3D perspective for child elements */
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
-/* Add these styles to your experience.style.css file */
+}
 
-/* Apply the overlay only to the background image */
-.experience-card-overlay {
+.experience-card-container:hover {
+  transform: scale(1.05);  /* Slightly enlarges the card on hover */
+}
+.experience-card-container:active {
+  transform: scale(0.98);  /* Slightly shrinks the card on tap */
+  transition: transform 0.2s ease;
+}
+.experience-card-container:focus {
+  outline: 2px solid #4a90e2;  /* Adds a blue border around the card when focused */
+}
+
+.experience-card {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  transition: transform 0.6s ease-in-out;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.experience-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.experience-card-front,
+.experience-card-back {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.605); /* Dark semi-transparent overlay */
-  z-index: 0; /* Overlay stays below the content */
-  border-radius: inherit; /* Match the card's rounded corners */
+  border-radius: 10px;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
 }
 
-/* Ensure the content stays above the overlay */
-.relative .z-10 {
-  position: relative;
-  z-index: 10;
+.experience-card-front {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
+.experience-card-back {
+  background-color: white;
+  color: black;
+  transform: rotateY(180deg);
+  padding: 20px;
+  text-align: left;
+}
+
+.experience-logo {
+  max-width: 50%;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  /* For screens >= 640px */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* For screens >= 1024px */
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
