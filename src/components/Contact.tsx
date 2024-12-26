@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { Mail, Linkedin, Github } from 'lucide-react';
+import { Mail, Linkedin, Calendar } from 'lucide-react';
 
 export default function Contact() {
   const [ref, inView] = useInView({
@@ -9,7 +9,7 @@ export default function Contact() {
   });
 
   return (
-    <section className="py-20" id="contact">
+    <section className="py-20 bg-gray-800" id="contact">
       <motion.div 
         ref={ref}
         initial={{ opacity: 0, y: 50 }}
@@ -24,6 +24,13 @@ export default function Contact() {
         </p>
         
         <div className="flex justify-center gap-8">
+          <a href="https://calendly.com/nji-olaf"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
+            <Calendar size={20} />
+            <span>Book me</span>
+          </a>
           <a href="mailto:njivaolaf.pro@gmail.com"
              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
             <Mail size={20} />
@@ -35,13 +42,6 @@ export default function Contact() {
              className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
             <Linkedin size={20} />
             <span>LinkedIn</span>
-          </a>
-          <a href="https://github.com/njiva-olaf"
-             target="_blank"
-             rel="noopener noreferrer"
-             className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors">
-            <Github size={20} />
-            <span>GitHub</span>
           </a>
         </div>
       </motion.div>
