@@ -23,7 +23,11 @@ export default function NavBar() {
         </a>
         <div className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a key={l.id} href={`#${l.id}`} className="font-mono text-sm text-muted transition-colors hover:text-accent focus-visible:text-accent">
+            <a
+              key={l.id}
+              href={`#${l.id}`}
+              className="rounded font-mono text-sm text-muted transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
               {t(l.key)}
             </a>
           ))}
@@ -35,7 +39,11 @@ export default function NavBar() {
             {lang.toUpperCase()}
           </button>
         </div>
-        <button className="md:hidden text-text" onClick={() => setOpen((o) => !o)} aria-label="Toggle menu">
+        <button
+          className="rounded text-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent md:hidden"
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
+        >
           {open ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
