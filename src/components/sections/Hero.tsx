@@ -17,10 +17,21 @@ const terminalLines = [
   '$ _',
 ];
 
+// Isolated so the typewriter's high-frequency state updates re-render only
+// this leaf, leaving the Hero's entrance animation to run uninterrupted.
+function TerminalTyping({ reduced }: { reduced: boolean }) {
+  const { text } = useTypewriter(terminalLines, { enabled: !reduced });
+  return (
+    <pre className="min-h-[220px] whitespace-pre-wrap text-text">
+      <span className="text-success">{text}</span>
+      <span className="animate-pulse text-accent">▌</span>
+    </pre>
+  );
+}
+
 export default function Hero() {
   const t = useT();
   const reduced = useReducedMotion();
-  const { text } = useTypewriter(terminalLines, { enabled: !reduced });
 
   const container = {
     hidden: {},
@@ -78,10 +89,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: reduced ? 0 : 0.3 }}
         >
           <TerminalWindow title="portfolio ~ zsh">
-            <pre className="min-h-[220px] whitespace-pre-wrap text-text">
-              <span className="text-success">{text}</span>
-              <span className="animate-pulse text-accent">▌</span>
-            </pre>
+            <TerminalTyping reduced={reduced} />
             <div className="mt-4 grid grid-cols-3 gap-3 border-t border-border pt-4 text-center">
               {[
                 { k: '8+', v: 'years' },
