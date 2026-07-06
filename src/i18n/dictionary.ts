@@ -19,6 +19,10 @@ export const dictionary = {
     'hero.modules': 'LOADED_MODULES',
     'about.title': 'About',
     'about.kicker': 'whoami',
+    'about.p1':
+      "I'm a seasoned full-stack developer with 8 years of experience building dynamic, scalable web applications. I specialize in API development, integration, real-time applications, and finance systems such as billing and contract APIs.",
+    'about.p2':
+      'My work spans real estate, food-tech and fintech, merging robust backend systems with seamless frontends to ship solutions that are both reliable and user-friendly.',
     'skills.title': 'Skills',
     'skills.kicker': 'stack.json',
     'experience.title': 'Experience',
@@ -47,6 +51,10 @@ export const dictionary = {
     'hero.modules': 'MODULES_CHARGÉS',
     'about.title': 'À propos',
     'about.kicker': 'whoami',
+    'about.p1':
+      "Développeur full-stack aguerri, 8 ans d'expérience à construire des applications web dynamiques et scalables. Je me spécialise dans le développement d'API, l'intégration, le temps réel et les systèmes financiers (facturation, contrats).",
+    'about.p2':
+      "Mon travail couvre l'immobilier, la food-tech et la fintech, en associant des back-ends robustes à des front-ends soignés pour livrer des solutions fiables et agréables à utiliser.",
     'skills.title': 'Compétences',
     'skills.kicker': 'stack.json',
     'experience.title': 'Expérience',
