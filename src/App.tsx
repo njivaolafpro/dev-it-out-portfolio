@@ -1,17 +1,16 @@
-import About from './components/About';
-import Experience from './components/Experience/Experience';
-import Contact from './components/Contact';
-import Navbar from './components/NavBar';
+import { LanguageProvider } from './i18n/LanguageContext';
+import GridBackground from './components/background/GridBackground';
+import NavBar from './components/layout/NavBar';
+import Hero from './components/sections/Hero';
 
-function App() {
+export default function App() {
   return (
-    <div>
-      <Navbar />
-      <About />
-      <Experience />
-      <Contact />
-    </div>
+    <LanguageProvider>
+      <GridBackground />
+      <NavBar />
+      <main>
+        <Hero />
+      </main>
+    </LanguageProvider>
   );
 }
-
-export default App;
