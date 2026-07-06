@@ -47,7 +47,8 @@ export default function GridBackground() {
 
     const onVisibility = () => {
       running = !document.hidden;
-      if (running) { raf = requestAnimationFrame(draw); } else { cancelAnimationFrame(raf); }
+      cancelAnimationFrame(raf); // avoid stacking a second loop on repeated visibility events
+      if (running) { raf = requestAnimationFrame(draw); }
     };
 
     resize();

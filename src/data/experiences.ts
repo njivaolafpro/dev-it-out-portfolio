@@ -73,7 +73,7 @@ export const experiences: Experience[] = [
       fr: "Mise en place de modules de tests BDD avec Cucumber et Gherkin, optimisation des performances des API, et travail sur les microservices d'authentification et de proxy de services. Gestion du déploiement des environnements avec Jenkins, Docker et Kubernetes. Contribution à la gestion du consentement utilisateur et aux services d'emailing marketing.",
     },
     logo: 'logos/ftv.png',
-    badges: ['Koa.js', 'Express', 'Cucumber', 'Gherkin', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices'],
+    badges: ['Koa.js', 'Express.js', 'Cucumber', 'Gherkin', 'Jenkins', 'Docker', 'Kubernetes', 'Microservices'],
   },
   {
     title: 'Backend Developer @ Spaycial',

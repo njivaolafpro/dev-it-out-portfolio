@@ -50,11 +50,11 @@ export default function NavBar() {
       {open && (
         <div className="border-t border-border bg-surface md:hidden">
           {links.map((l) => (
-            <a key={l.id} href={`#${l.id}`} onClick={() => setOpen(false)} className="block px-6 py-3 font-mono text-sm text-muted hover:text-accent">
+            <a key={l.id} href={`#${l.id}`} onClick={() => setOpen(false)} className="block px-6 py-3 font-mono text-sm text-muted hover:text-accent focus-visible:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent">
               {t(l.key)}
             </a>
           ))}
-          <button onClick={toggle} className="block px-6 py-3 font-mono text-sm text-accent">
+          <button onClick={toggle} className="block w-full px-6 py-3 text-left font-mono text-sm text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent">
             {lang.toUpperCase()} · switch
           </button>
         </div>
