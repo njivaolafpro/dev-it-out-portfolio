@@ -1,22 +1,28 @@
-import { useRef } from 'react';
-import Home3DSpline from './components/Home3DSpline';
-import About from './components/About';
-import Experience from './components/Experience/Experience';
-import Contact from './components/Contact';
-import Navbar from './components/NavBar';
+import { LanguageProvider } from './i18n/LanguageContext';
+import GridBackground from './components/background/GridBackground';
+import NavBar from './components/layout/NavBar';
+import Footer from './components/layout/Footer';
+import Hero from './components/sections/Hero';
+import About from './components/sections/About';
+import Skills from './components/sections/Skills';
+import Experience from './components/sections/Experience';
+import Projects from './components/sections/Projects';
+import Contact from './components/sections/Contact';
 
-function App() {
-  const mainRef = useRef<HTMLDivElement>(null);
-
+export default function App() {
   return (
-    <div ref={mainRef}>
-      <Navbar/>
-      <Home3DSpline />
-      <About />
-      <Experience />
-      <Contact />
-    </div>
+    <LanguageProvider>
+      <GridBackground />
+      <NavBar />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+      <Footer />
+    </LanguageProvider>
   );
 }
-
-export default App;

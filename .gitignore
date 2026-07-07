@@ -6,6 +6,13 @@
 /build
 .pnp.js
 
+# build output
+/dist
+
+# local tooling / scratch
+.claude/
+.superpowers/
+
 # testing
 /coverage
 
