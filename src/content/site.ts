@@ -13,6 +13,18 @@ export const links = {
 };
 
 export const emailAddress = 'njivaolaf.pro@gmail.com';
+
+/** Client logos in public/logos, most recent first. `ratio` is the width / height of the artwork. */
+export const clients = [
+  { name: 'Elmut', file: 'elmut.svg', ratio: 1024 / 176 },
+  { name: 'Emeria', file: 'emeria.svg', ratio: 138 / 25.4 },
+  { name: 'Planity', file: 'planity.svg', ratio: 140 / 16 },
+  { name: 'Bolk', file: 'bolk.png', ratio: 725 / 208 },
+  { name: 'France Télévisions', file: 'france-televisions.svg', ratio: 1438 / 395 },
+  { name: 'TheFork', file: 'thefork.svg', ratio: 132 / 26 },
+  { name: 'Spaycial', file: 'spaycial.svg', ratio: 200 / 48 },
+  { name: 'CEB', file: 'ceb.png', ratio: 600 / 354 },
+];
 export const siteUrl = 'https://dev-it-out-portfolio.vercel.app';
 
 export type ServiceIcon = 'card' | 'key' | 'gauge' | 'pulse' | 'spark' | 'chart';
@@ -28,6 +40,7 @@ export type Dictionary = {
     tagline: string;
     base: [string, string];
   };
+  clients: { title: string };
   toc: { title: string; intro: string; items: { label: string; href: string }[] };
   projects: {
     title: string;
@@ -89,6 +102,7 @@ const fr: Dictionary = {
     tagline: 'Je branche des produits sur ce qui les fait tourner.',
     base: ['Basé à Longueville (77)', 'France'],
   },
+  clients: { title: 'J’ai travaillé pour' },
   toc: {
     title: 'Sommaire',
     intro: 'Ce que j’ai livré, ce que je sais faire, et comment on peut travailler ensemble.',
@@ -308,6 +322,7 @@ const en: Dictionary = {
     tagline: 'I plug products into what makes them run.',
     base: ['Based in Longueville', 'France'],
   },
+  clients: { title: 'I have worked for' },
   toc: {
     title: 'Contents',
     intro: 'What I have shipped, what I can do, and how we can work together.',

@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { emailAddress, getDictionary, links, type Lang } from '@/content/site';
+import { clients, emailAddress, getDictionary, links, type Lang } from '@/content/site';
 import { GoldLeaves, GoldSweep, Sparkle } from './Decor';
 import {
   ArrowIcon,
@@ -14,6 +14,17 @@ import {
 } from './Icons';
 
 const REVISION_YEAR = '2026';
+
+/** Same visual weight for every logo: a constant area, so long wordmarks get thinner. */
+const LOGO_AREA = 2300;
+
+function logoStyle(file: string, ratio: number) {
+  return {
+    '--logo': `url(/logos/${file})`,
+    '--ratio': ratio,
+    '--width': `${Math.round(Math.sqrt(LOGO_AREA * ratio))}px`,
+  } as React.CSSProperties;
+}
 
 function pad(index: number) {
   return String(index + 1).padStart(2, '0');
@@ -57,6 +68,8 @@ export function Site({ lang }: { lang: Lang }) {
       <a className="skip" href="#contenu">
         {t.a11y.skip}
       </a>
+
+      <span className="progress" aria-hidden="true" />
 
       <div className="page">
         <header className="top">
@@ -131,6 +144,26 @@ export function Site({ lang }: { lang: Lang }) {
                 </span>
               </p>
             </div>
+          </section>
+
+          <section className="panel clients" aria-labelledby="clients-title">
+            <header className="column-title">
+              <h2 id="clients-title">{t.clients.title}</h2>
+              <Sparkle size={14} />
+              <span className="rule" />
+            </header>
+            <ul className="client-logos">
+              {clients.map((client, index) => (
+                <li key={client.name} style={{ '--index': index } as React.CSSProperties}>
+                  <span
+                    className="client-logo"
+                    role="img"
+                    aria-label={client.name}
+                    style={logoStyle(client.file, client.ratio)}
+                  />
+                </li>
+              ))}
+            </ul>
           </section>
 
           <nav className="panel toc" aria-labelledby="toc-title">

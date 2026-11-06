@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import { readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { test } from 'node:test';
-import { frenchSpacing, getDictionary } from '../src/content/site.ts';
+import { clients, frenchSpacing, getDictionary } from '../src/content/site.ts';
 
 function shape(value: unknown): unknown {
   if (Array.isArray(value)) return value.map(shape);
@@ -26,6 +26,12 @@ function sourceFiles(dir: string): string[] {
     return /\.(ts|tsx|css)$/.test(name) ? [path] : [];
   });
 }
+
+test('every client has a logo file', () => {
+  for (const client of clients) {
+    assert.ok(statSync(join('public/logos', client.file)).isFile(), client.name);
+  }
+});
 
 test('French and English have the same structure', () => {
   assert.deepEqual(shape(getDictionary('fr')), shape(getDictionary('en')));

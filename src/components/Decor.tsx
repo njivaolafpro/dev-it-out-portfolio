@@ -88,10 +88,10 @@ export function GoldSweep({ className }: { className?: string }) {
           <stop offset="1" stopColor="#f0dcb6" stopOpacity="0" />
         </linearGradient>
       </defs>
-      <path d="M0 214C180 208 372 168 500 44" stroke="url(#sweep)" />
-      <path d="M0 200C190 202 384 150 506 36" stroke="url(#sweep)" strokeOpacity=".7" />
-      <path d="M40 220C230 214 416 178 522 58" stroke="url(#sweep)" strokeOpacity=".45" />
-      <path d="M120 220C290 206 450 160 540 72" stroke="url(#sweep)" strokeOpacity=".3" />
+      <path d="M0 214C180 208 372 168 500 44" stroke="url(#sweep)" pathLength={1} />
+      <path d="M0 200C190 202 384 150 506 36" stroke="url(#sweep)" pathLength={1} strokeOpacity=".7" />
+      <path d="M40 220C230 214 416 178 522 58" stroke="url(#sweep)" pathLength={1} strokeOpacity=".45" />
+      <path d="M120 220C290 206 450 160 540 72" stroke="url(#sweep)" pathLength={1} strokeOpacity=".3" />
     </svg>
   );
 }
