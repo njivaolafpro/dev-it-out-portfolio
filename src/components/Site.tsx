@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { clients, emailAddress, getDictionary, links, type Lang } from '@/content/site';
-import { GoldLeaves, GoldSweep, Sparkle } from './Decor';
+import { GoldSweep, Sparkle } from './Decor';
 import {
   ArrowIcon,
   CalendarIcon,
@@ -71,8 +71,8 @@ export function Site({ lang }: { lang: Lang }) {
 
       <span className="progress" aria-hidden="true" />
 
-      <div className="page">
-        <header className="top">
+      <header className="top">
+        <div className="top-inner">
           <a className="brand" href={lang === 'fr' ? '/' : '/en'}>
             <span className="monogram" aria-hidden="true">
               <span>O</span>
@@ -83,20 +83,27 @@ export function Site({ lang }: { lang: Lang }) {
               <span>{t.header.lines[1]}</span>
             </span>
           </a>
-          <div className="top-right">
-            <a
-              className="lang-switch"
-              href={otherLang === 'fr' ? '/' : '/en'}
-              hrefLang={otherLang}
-              aria-label={t.header.switchLabel}
-            >
-              {otherLang}
-            </a>
-            <span className="rule" />
-            <span className="year">{REVISION_YEAR}</span>
-          </div>
-        </header>
+          <nav className="top-nav" aria-label={t.nav.label}>
+            <ul>
+              {t.nav.items.map((item) => (
+                <li key={item.href}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <a
+            className="lang-switch"
+            href={otherLang === 'fr' ? '/' : '/en'}
+            hrefLang={otherLang}
+            aria-label={t.header.switchLabel}
+          >
+            {otherLang}
+          </a>
+        </div>
+      </header>
 
+      <div className="page">
         <main id="contenu">
           <section className="hero">
             <h1 className="visually-hidden">{t.a11y.h1}</h1>
@@ -137,11 +144,7 @@ export function Site({ lang }: { lang: Lang }) {
               <p className="tagline">{t.hero.tagline}</p>
               <p className="based">
                 <PinIcon />
-                <span>
-                  {t.hero.base[0]}
-                  <br />
-                  {t.hero.base[1]}
-                </span>
+                <span>{t.hero.base}</span>
               </p>
             </div>
           </section>
@@ -165,32 +168,6 @@ export function Site({ lang }: { lang: Lang }) {
               ))}
             </ul>
           </section>
-
-          <nav className="panel toc" aria-labelledby="toc-title">
-            <div className="toc-intro">
-              <h2 id="toc-title">{t.toc.title}</h2>
-              <p>
-                <Sparkle size={14} />
-                <span>{t.toc.intro}</span>
-              </p>
-            </div>
-            <div className="toc-links">
-              <ol className="toc-list">
-                {t.toc.items.map((item, index) => (
-                  <li key={item.href}>
-                    <a href={item.href}>
-                      <span className="toc-number">{pad(index)}</span>
-                      <span>{item.label}</span>
-                    </a>
-                  </li>
-                ))}
-              </ol>
-              <span className="toc-star" aria-hidden="true">
-                <Sparkle size={24} />
-              </span>
-            </div>
-            <GoldLeaves className="toc-leaves" />
-          </nav>
 
           <section id="projets" className="section" aria-labelledby="projets-title">
             <header className="section-title">

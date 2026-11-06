@@ -89,7 +89,7 @@ export default async function RootLayout({
     url: siteUrl,
     image: `${siteUrl}/olaf.png`,
     email: emailAddress,
-    address: { '@type': 'PostalAddress', addressLocality: 'Longueville', addressCountry: 'FR' },
+    address: { '@type': 'PostalAddress', addressRegion: 'Île-de-France', addressCountry: 'FR' },
     sameAs: [links.linkedin, links.upwork],
     knowsLanguage: ['fr', 'en', 'mfe', 'mg'],
   };

@@ -55,11 +55,11 @@ test('frenchSpacing handles amounts and punctuation', () => {
   assert.equal(frenchSpacing('On en parle :)'), 'On en parle :)');
 });
 
-test('every table of contents link points to a section of the page', () => {
+test('every navigation link points to a section of the page', () => {
   const page = sourceFiles('src/components')
     .map((file) => readFileSync(file, 'utf8'))
     .join('\n');
-  for (const { href } of getDictionary('fr').toc.items) {
+  for (const { href } of getDictionary('fr').nav.items) {
     assert.ok(page.includes(`id="${href.slice(1)}"`), href);
   }
 });

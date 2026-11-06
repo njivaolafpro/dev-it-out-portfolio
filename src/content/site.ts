@@ -38,10 +38,10 @@ export type Dictionary = {
     text: string;
     cta: string;
     tagline: string;
-    base: [string, string];
+    base: string;
   };
   clients: { title: string };
-  toc: { title: string; intro: string; items: { label: string; href: string }[] };
+  nav: { label: string; items: { label: string; href: string }[] };
   projects: {
     title: string;
     more: string;
@@ -100,12 +100,11 @@ const fr: Dictionary = {
     text: '8 ans sur des produits grand public utilisés par plusieurs millions d’utilisateurs. J’interviens sur l’architecture, la performance et l’intégration de systèmes tiers.',
     cta: 'Réserver un appel',
     tagline: 'Je branche des produits sur ce qui les fait tourner.',
-    base: ['Basé à Longueville (77)', 'France'],
+    base: 'Île-de-France',
   },
   clients: { title: 'J’ai travaillé pour' },
-  toc: {
-    title: 'Sommaire',
-    intro: 'Ce que j’ai livré, ce que je sais faire, et comment on peut travailler ensemble.',
+  nav: {
+    label: 'Navigation principale',
     items: [
       { label: 'Projets', href: '#projets' },
       { label: 'Services', href: '#services' },
@@ -295,7 +294,7 @@ const fr: Dictionary = {
     text: 'Besoin d’aide pour brancher un paiement, fiabiliser une API ou scaler un back-office qui sature ?',
     cta: 'Réserver un appel',
     connect: 'Me retrouver',
-    location: 'Longueville (77), France',
+    location: 'Île-de-France',
     calendlyLabel: 'Réserver un créneau sur Calendly',
   },
   footer: 'Olaf Ranaivoson. Tous droits réservés.',
@@ -320,12 +319,11 @@ const en: Dictionary = {
     text: '8 years on consumer products used by several million users. I work on architecture, performance and third-party system integrations.',
     cta: 'Book a call',
     tagline: 'I plug products into what makes them run.',
-    base: ['Based in Longueville', 'France'],
+    base: 'Paris region, France',
   },
   clients: { title: 'I have worked for' },
-  toc: {
-    title: 'Contents',
-    intro: 'What I have shipped, what I can do, and how we can work together.',
+  nav: {
+    label: 'Main navigation',
     items: [
       { label: 'Projects', href: '#projets' },
       { label: 'Services', href: '#services' },
@@ -515,7 +513,7 @@ const en: Dictionary = {
     text: 'Need help plugging in a payment, hardening an API or scaling a back-office under strain?',
     cta: 'Book a call',
     connect: 'Find me',
-    location: 'Longueville, France',
+    location: 'Paris region, France',
     calendlyLabel: 'Book a slot on Calendly',
   },
   footer: 'Olaf Ranaivoson. All rights reserved.',
