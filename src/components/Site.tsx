@@ -61,7 +61,7 @@ function ColumnTitle({ children, id }: { children: React.ReactNode; id: string }
 export function Site({ lang }: { lang: Lang }) {
   const t = getDictionary(lang);
   const otherLang = lang === 'fr' ? 'en' : 'fr';
-  const word = 'OLAF RANAIVOSON'.split('');
+  const word = 'NJIVA OLAF RANAIVOSON'.split('');
 
   return (
     <>
@@ -112,7 +112,7 @@ export function Site({ lang }: { lang: Lang }) {
                 <span
                   key={index}
                   className={letter === ' ' ? 'hero-space' : undefined}
-                  style={{ animationDelay: `${index * 35}ms` }}
+                  style={{ animationDelay: `${index * 28}ms` }}
                 >
                   {letter}
                 </span>
@@ -137,7 +137,6 @@ export function Site({ lang }: { lang: Lang }) {
               <p className="signature" aria-hidden="true">
                 Olaf Ranaivoson
               </p>
-              <p className="spaced-name">Olaf Ranaivoson</p>
               <External href={links.calendly} className="button">
                 <CalendarIcon />
                 {t.hero.cta}

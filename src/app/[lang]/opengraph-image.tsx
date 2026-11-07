@@ -39,20 +39,20 @@ export default async function OpengraphImage({ params }: { params: Promise<{ lan
           top: 18,
           display: 'flex',
           justifyContent: 'space-between',
-          fontSize: 232,
+          fontSize: 176,
           lineHeight: 1,
           color: '#e6d2b3',
         }}
       >
-        {'OLAF RANAIVOSON'.split('').map((letter, index) =>
-          letter === ' ' ? <span key={index} style={{ width: 24 }} /> : <span key={index}>{letter}</span>,
+        {'NJIVA OLAF RANAIVOSON'.split('').map((letter, index) =>
+          letter === ' ' ? <span key={index} style={{ width: 18 }} /> : <span key={index}>{letter}</span>,
         )}
       </div>
       <img
         src={`data:image/png;base64,${photo.toString('base64')}`}
         width={420}
         height={521}
-        style={{ position: 'absolute', left: 390, top: 118 }}
+        style={{ position: 'absolute', left: 390, top: 130 }}
         alt=""
       />
       <div
