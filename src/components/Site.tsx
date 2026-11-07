@@ -61,7 +61,7 @@ function ColumnTitle({ children, id }: { children: React.ReactNode; id: string }
 export function Site({ lang }: { lang: Lang }) {
   const t = getDictionary(lang);
   const otherLang = lang === 'fr' ? 'en' : 'fr';
-  const word = 'PORTFOLIO'.split('');
+  const word = 'OLAF RANAIVOSON'.split('');
 
   return (
     <>
@@ -109,7 +109,11 @@ export function Site({ lang }: { lang: Lang }) {
             <h1 className="visually-hidden">{t.a11y.h1}</h1>
             <p className="hero-word" aria-hidden="true">
               {word.map((letter, index) => (
-                <span key={index} style={{ animationDelay: `${index * 45}ms` }}>
+                <span
+                  key={index}
+                  className={letter === ' ' ? 'hero-space' : undefined}
+                  style={{ animationDelay: `${index * 35}ms` }}
+                >
                   {letter}
                 </span>
               ))}

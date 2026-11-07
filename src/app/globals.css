@@ -220,23 +220,35 @@ a:focus-visible {
   display: grid;
   margin-top: 22px;
   grid-template-columns: minmax(0, 300px) 1fr minmax(0, 220px);
+  grid-template-rows: auto 1fr;
   grid-template-areas:
     'word word word'
     'left . right';
   container-type: inline-size;
 }
 
+/* Tall enough for the photo, which is out of the flow. On a child, because cqw on .hero itself would read the viewport. */
+.hero::after {
+  content: '';
+  grid-area: 2 / 2;
+  min-height: 44cqw;
+}
+
 .hero-word {
   grid-area: word;
   display: flex;
   justify-content: space-between;
-  /* League Gothic at 85% width and this size: the nine letters just fill the container. */
+  /* League Gothic at 85% width and this size: the name just fills the container. */
   font-family: var(--font-display), Impact, sans-serif;
   font-stretch: 85%;
-  font-size: 42.4cqw;
+  font-size: 25.2cqw;
   line-height: 0.84;
   color: var(--sand);
   user-select: none;
+}
+
+.hero-word .hero-space {
+  width: 0.14em;
 }
 
 .hero-word span {
@@ -247,12 +259,13 @@ a:focus-visible {
 .hero-photo {
   position: absolute;
   z-index: 1;
-  top: -1.5cqw;
+  /* Only the top of the head overlaps the letters, so the name stays readable. */
+  top: 13cqw;
   left: 50%;
-  width: min(50cqw, 640px);
+  width: min(46cqw, 590px);
   height: auto;
   transform: translateX(-50%);
-  filter: contrast(1.04) saturate(0.92) drop-shadow(0 0 40px rgba(0, 0, 0, 0.75));
+  filter: contrast(1.04) saturate(0.92);
   mask-image: linear-gradient(#000 84%, transparent 99%);
   animation: photo-in 1.1s 0.15s var(--ease) both;
   pointer-events: none;
@@ -262,6 +275,7 @@ a:focus-visible {
 .hero-right {
   position: relative;
   z-index: 2;
+  align-self: center;
   padding-top: 28px;
 }
 
@@ -1476,8 +1490,13 @@ a:focus-visible {
     padding-right: 28px;
   }
 
+  .hero::after {
+    display: none;
+  }
+
   .hero {
     grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
     grid-template-areas:
       'word'
       'photo'
@@ -1491,7 +1510,7 @@ a:focus-visible {
     top: auto;
     left: auto;
     width: 84cqw;
-    margin: -28cqw auto 0;
+    margin: -7cqw auto 0;
     transform: none;
     animation-name: fade-up;
   }

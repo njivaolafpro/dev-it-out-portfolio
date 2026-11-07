@@ -36,23 +36,23 @@ export default async function OpengraphImage({ params }: { params: Promise<{ lan
           position: 'absolute',
           left: 40,
           right: 40,
-          top: 10,
+          top: 18,
           display: 'flex',
           justifyContent: 'space-between',
-          fontSize: 395,
+          fontSize: 232,
           lineHeight: 1,
           color: '#e6d2b3',
         }}
       >
-        {'PORTFOLIO'.split('').map((letter, index) => (
-          <span key={index}>{letter}</span>
-        ))}
+        {'OLAF RANAIVOSON'.split('').map((letter, index) =>
+          letter === ' ' ? <span key={index} style={{ width: 24 }} /> : <span key={index}>{letter}</span>,
+        )}
       </div>
       <img
         src={`data:image/png;base64,${photo.toString('base64')}`}
-        width={484}
-        height={600}
-        style={{ position: 'absolute', left: 358, top: 44 }}
+        width={420}
+        height={521}
+        style={{ position: 'absolute', left: 390, top: 118 }}
         alt=""
       />
       <div
@@ -76,11 +76,9 @@ export default async function OpengraphImage({ params }: { params: Promise<{ lan
           alignItems: 'flex-end',
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', fontSize: 54, lineHeight: 1.08, color: '#d3ac72' }}>
-          <span>OLAF RANAIVOSON</span>
-          <span style={{ fontSize: 38, color: '#efe7da' }}>
-            {`${t.hero.role[0]} ${t.hero.role[1]}`.toUpperCase()}
-          </span>
+        <div style={{ display: 'flex', flexDirection: 'column', fontSize: 50, lineHeight: 1.08, color: '#d3ac72' }}>
+          <span>{t.hero.role[0].toUpperCase()}</span>
+          <span>{t.hero.role[1].toUpperCase()}</span>
         </div>
         <div style={{ display: 'flex', gap: 36 }}>
           {proofs.map((proof) => (
