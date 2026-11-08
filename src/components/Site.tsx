@@ -176,7 +176,7 @@ export function Site({ lang }: { lang: Lang }) {
             <header className="section-title">
               <h2 id="projets-title">{t.projects.title}</h2>
               <span className="rule" />
-              <a className="more" href="#parcours">
+              <a className="more" href="#missions">
                 {t.projects.more}
                 <ArrowIcon />
               </a>
@@ -272,9 +272,9 @@ export function Site({ lang }: { lang: Lang }) {
             </section>
           </div>
 
-          <section id="parcours" className="section" aria-labelledby="parcours-title">
+          <section id="missions" className="section" aria-labelledby="missions-title">
             <header className="section-title">
-              <h2 id="parcours-title">{t.career.title}</h2>
+              <h2 id="missions-title">{t.career.title}</h2>
               <span className="rule" />
             </header>
             <ol className="career">

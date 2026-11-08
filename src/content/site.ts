@@ -85,7 +85,7 @@ const fr: Dictionary = {
   meta: {
     title: 'Olaf Ranaivoson, développeur full stack IA freelance (Node, Next, Nest)',
     description:
-      'Je branche des produits sur ce qui les fait tourner : paiement, authentification, données temps réel. 8 ans de full stack sur des produits utilisés par des millions de personnes.',
+      'Développeur freelance, je branche des produits sur ce qui les fait tourner : paiement, authentification, données temps réel. 8 ans sur des produits utilisés par des millions de personnes.',
     imageAlt: 'Portfolio de Olaf Ranaivoson, développeur full stack IA',
   },
   a11y: {
@@ -94,29 +94,29 @@ const fr: Dictionary = {
     photo: 'Portrait de Olaf Ranaivoson',
     newTab: 'nouvel onglet',
   },
-  header: { lines: ['Développeur full stack', '& IA'], switchLabel: 'Read this page in English' },
+  header: { lines: ['Développeur freelance', 'Full stack & IA'], switchLabel: 'Read this page in English' },
   hero: {
-    role: ['Développeur', 'Full Stack IA'],
-    text: '8 ans sur des produits grand public utilisés par plusieurs millions d’utilisateurs. J’interviens sur l’architecture, la performance et l’intégration de systèmes tiers.',
+    role: ['Freelance', 'Full stack & IA'],
+    text: 'J’aide les produits à encaisser, à se connecter et à tenir la charge. 8 ans sur des produits grand public utilisés par des millions de personnes, de l’architecture à la mise en production.',
     cta: 'Réserver un appel',
     tagline: 'Je branche des produits sur ce qui les fait tourner.',
     base: 'Île-de-France',
   },
-  clients: { title: 'J’ai travaillé pour' },
+  clients: { title: 'Mes clients' },
   nav: {
     label: 'Navigation principale',
     items: [
-      { label: 'Projets', href: '#projets' },
+      { label: 'Résultats', href: '#projets' },
       { label: 'Services', href: '#services' },
       { label: 'Outils', href: '#outils' },
       { label: 'À propos', href: '#a-propos' },
-      { label: 'Parcours', href: '#parcours' },
+      { label: 'Missions', href: '#missions' },
       { label: 'Contact', href: '#contact' },
     ],
   },
   projects: {
-    title: 'Projets sélectionnés',
-    more: 'Voir le parcours',
+    title: 'Résultats pour mes clients',
+    more: 'Voir les missions',
     items: [
       {
         id: 'emeria',
@@ -124,15 +124,15 @@ const fr: Dictionary = {
         sector: 'Immobilier, gestion de copropriété',
         figure: '7 M',
         figureLabel: 'de comptes clients',
-        text: 'Comptes clients basculés vers l’authentification Okta, pour l’application mobile.',
+        text: 'Migration des comptes clients vers l’authentification Okta, pour l’application mobile.',
       },
       {
         id: 'planity',
         client: 'Planity',
         sector: 'Beauté, prise de rendez-vous',
-        figure: '8 M',
+        figure: '15 M',
         figureLabel: 'd’utilisateurs',
-        text: 'Module Stripe Payment Link pour payer un acompte, dimensionné pour cette charge.',
+        text: 'Paiement d’acompte par Stripe Payment Link, livré sur une plateforme à cette échelle.',
       },
       {
         id: 'elmut',
@@ -140,7 +140,7 @@ const fr: Dictionary = {
         sector: 'E-commerce, abonnement',
         figure: '+15 000 €',
         figureLabel: 'de CA par semaine',
-        text: 'Sur les commandes ponctuelles via le site. Refonte du site et de l’espace client, wizard de souscription, reprise après impayé.',
+        text: 'En plus sur les commandes ponctuelles du site, après la refonte du site, de l’espace client et du tunnel de souscription.',
       },
       {
         id: 'bolk',
@@ -148,7 +148,7 @@ const fr: Dictionary = {
         sector: 'Foodtech, distributeurs',
         figure: '+25 %',
         figureLabel: 'de performance',
-        text: 'Plats distribués plus vite grâce aux traitements asynchrones. Contrats débloqués avec TF1 et Le Méridien.',
+        text: 'Plats servis plus vite grâce aux traitements asynchrones, et des contrats débloqués avec TF1 et Le Méridien.',
       },
       {
         id: 'france-tv',
@@ -156,7 +156,7 @@ const fr: Dictionary = {
         sector: 'Média',
         figure: '4 apps',
         figureLabel: '1 seule connexion',
-        text: 'Interface de connexion commune à Okoo, Slash, France TV et Lumni, via l’API Gigya.',
+        text: 'Une seule interface de connexion pour Okoo, Slash, France TV et Lumni, via l’API Gigya.',
       },
       {
         id: 'spaycial',
@@ -172,7 +172,7 @@ const fr: Dictionary = {
         sector: 'Énergie, île Maurice',
         figure: '+50 000',
         figureLabel: 'téléchargements',
-        text: 'Application créée de zéro pour CEB, compagnie d’électricité de l’île Maurice, chez Agileum.',
+        text: 'Application conçue de zéro pour CEB, la compagnie d’électricité de l’île Maurice.',
       },
     ],
     next: {
@@ -182,8 +182,8 @@ const fr: Dictionary = {
     },
   },
   services: {
-    title: 'Services',
-    proofLabel: 'Chez',
+    title: 'Ce que j’apporte',
+    proofLabel: 'Livré pour',
     items: [
       {
         icon: 'card',
@@ -227,65 +227,60 @@ const fr: Dictionary = {
   about: {
     title: 'À propos',
     paragraphs: [
-      'Je conçois des apps et des back-offices branchés sur des API tierces : paiement, authentification, GED, notifications, analytics. Et je scale ceux qui commencent à craquer.',
-      'J’ai commencé à l’île Maurice, en réalité virtuelle puis sur des applications grand public, avant de travailler pour des produits français à grande échelle. Je travaille en TDD, DDD et Clean Architecture.',
+      'Développeur indépendant, je conçois des apps et des back-offices branchés sur des API tierces : paiement, authentification, GED, notifications, analytics. Et je scale ceux qui commencent à craquer.',
+      'Mes clients ont un seul interlocuteur, de l’architecture à la mise en production, qui mesure l’impact de ce qu’il livre. Je travaille en TDD, DDD et Clean Architecture.',
+      'J’ai commencé à l’île Maurice, en réalité virtuelle puis sur des applications grand public, avant d’accompagner des produits français à grande échelle.',
     ],
     facts: [
+      { label: 'Statut', value: 'Indépendant (entreprise individuelle)' },
       { label: 'Langues', value: 'Français, anglais, créole mauricien, malgache' },
       { label: 'Formation', value: 'Licence informatique et sécurité réseau (2015 à 2017)' },
     ],
   },
   career: {
-    title: 'Parcours',
+    title: 'Missions',
     items: [
       {
         period: '07/2025 → aujourd’hui',
         company: 'Elmut',
-        role: 'Développeur Next.js / NestJS',
-        text: 'Rôle transverse sur ce qui fait le business : abonnements, paiements, impayés, commandes, vouchers, espace client.',
+        role: 'Freelance, Next.js / NestJS',
+        text: 'Mission transverse sur ce qui fait le business : abonnements, paiements, impayés, commandes, vouchers, espace client.',
         stack: 'Next.js, NestJS, TypeScript, Stripe, PostgreSQL, Redis, Turborepo, Docker, Terraform, PostHog',
       },
       {
         period: '06/2024 → 07/2025',
         company: 'Emeria Technologies',
-        role: 'Développeur backend Node.js / NestJS',
+        role: 'Freelance, backend Node.js / NestJS',
         text: 'Facturation et gestion de copropriété, authentification Okta, GED, synchros de données, lecture de factures PDF par LLM, feature flags.',
         stack: 'Node.js, NestJS, React, MongoDB, PostgreSQL, Snowflake, RabbitMQ, AWS SNS/SQS, Temporal, OpenAI, Anthropic, Gemini',
       },
       {
         period: '09/2023 → 03/2024',
         company: 'Planity',
-        role: 'Développeur full stack',
+        role: 'Full stack, paiement',
         text: 'Stripe Payment Link via AWS Lambda, plateforme de rendez-vous, optimisation SQL, roadmap du squad.',
         stack: 'Node.js, AWS Lambda, Firebase Functions, React, Elasticsearch, PostgreSQL, DynamoDB',
       },
       {
         period: '01/2023 → 07/2023',
         company: 'Bolk',
-        role: 'Lead développeur',
+        role: 'Lead technique',
         text: '9 systèmes embarqués en temps réel, algorithme de subvention pour les clients B2B, roadmap technique, droits sur le back-office.',
         stack: 'Node.js, TypeScript, Socket.IO, Vue.js, PostgreSQL, Grafana, Docker, AWS',
       },
       {
         period: '11/2019 → 12/2022',
-        company: 'Celaneo',
-        role: 'Développeur full stack pour France TV, TheFork, Spaycial',
+        company: 'France TV, TheFork, Spaycial',
+        role: 'Full stack, via Celaneo',
         text: 'Back for front, intégration d’API DSP2 sur plusieurs banques, gestion des disponibilités pour les restaurants, architectures techniques.',
         stack: 'Node.js, React, TypeScript, MongoDB, PostgreSQL, Elasticsearch, RabbitMQ, Redis, AWS, Docker',
       },
       {
         period: '07/2017 → 10/2019',
-        company: 'Agileum',
-        role: 'Développeur full stack',
-        text: 'MoKouran pour CEB, 5 back-offices, application POS intégrée à Simphony Oracle, CI/CD Jenkins et Docker.',
+        company: 'CEB',
+        role: 'Full stack, via Agileum',
+        text: 'Application MoKouran, 5 back-offices, application POS intégrée à Simphony Oracle, CI/CD Jenkins et Docker.',
         stack: 'Node.js, React, Angular, PostgreSQL, MongoDB, Oracle, Twilio, Docker, Jenkins',
-      },
-      {
-        period: '07/2016 → 06/2017',
-        company: 'EON Reality',
-        role: 'Stagiaire réalité virtuelle et augmentée',
-        text: 'Application de réalité augmentée pour un hôtel, simulations pour systèmes immersifs (Kinect, Leap Motion, iDome).',
-        stack: 'JavaScript, Unity (C#), EON Studio, 3DS Max, GLSL',
       },
     ],
   },
@@ -297,14 +292,14 @@ const fr: Dictionary = {
     location: 'Île-de-France',
     calendlyLabel: 'Réserver un créneau sur Calendly',
   },
-  footer: 'Olaf Ranaivoson. Tous droits réservés.',
+  footer: 'Olaf Ranaivoson, développeur freelance. Tous droits réservés.',
 };
 
 const en: Dictionary = {
   meta: {
     title: 'Olaf Ranaivoson, freelance full stack and AI developer (Node, Next, Nest)',
     description:
-      'I plug products into what makes them run: payments, authentication, real-time data. 8 years of full stack work on products used by millions of people.',
+      'Freelance developer: I plug products into what makes them run, from payments and authentication to real-time data. 8 years on products used by millions of people.',
     imageAlt: 'Portfolio of Olaf Ranaivoson, full stack and AI developer',
   },
   a11y: {
@@ -313,29 +308,29 @@ const en: Dictionary = {
     photo: 'Portrait of Olaf Ranaivoson',
     newTab: 'new tab',
   },
-  header: { lines: ['Full stack developer', '& AI'], switchLabel: 'Lire cette page en français' },
+  header: { lines: ['Freelance developer', 'Full stack & AI'], switchLabel: 'Lire cette page en français' },
   hero: {
-    role: ['Full Stack', 'AI Developer'],
-    text: '8 years on consumer products used by several million users. I work on architecture, performance and third-party system integrations.',
+    role: ['Freelance', 'Full stack & AI'],
+    text: 'I help products take payments, connect and handle the load. 8 years on consumer products used by millions of people, from architecture to production.',
     cta: 'Book a call',
     tagline: 'I plug products into what makes them run.',
     base: 'Paris region, France',
   },
-  clients: { title: 'I have worked for' },
+  clients: { title: 'My clients' },
   nav: {
     label: 'Main navigation',
     items: [
-      { label: 'Projects', href: '#projets' },
+      { label: 'Results', href: '#projets' },
       { label: 'Services', href: '#services' },
       { label: 'Tools', href: '#outils' },
       { label: 'About', href: '#a-propos' },
-      { label: 'Career', href: '#parcours' },
+      { label: 'Missions', href: '#missions' },
       { label: 'Contact', href: '#contact' },
     ],
   },
   projects: {
-    title: 'Selected projects',
-    more: 'See my career',
+    title: 'Results for my clients',
+    more: 'See my missions',
     items: [
       {
         id: 'emeria',
@@ -343,15 +338,15 @@ const en: Dictionary = {
         sector: 'Real estate, property management',
         figure: '7M',
         figureLabel: 'customer accounts',
-        text: 'Customer accounts moved to Okta authentication, for the mobile app.',
+        text: 'Customer accounts migrated to Okta authentication, for the mobile app.',
       },
       {
         id: 'planity',
         client: 'Planity',
         sector: 'Beauty, appointment booking',
-        figure: '8M',
+        figure: '15M',
         figureLabel: 'users',
-        text: 'Stripe Payment Link module for paying a deposit, sized for this load.',
+        text: 'Deposit payments through Stripe Payment Link, shipped on a platform at this scale.',
       },
       {
         id: 'elmut',
@@ -359,7 +354,7 @@ const en: Dictionary = {
         sector: 'E-commerce, subscription',
         figure: '+€15,000',
         figureLabel: 'revenue per week',
-        text: 'On one-off orders through the website. Rebuilt the site and customer area, subscription wizard, recovery after failed payments.',
+        text: 'Added on one-off website orders, after rebuilding the site, the customer area and the subscription funnel.',
       },
       {
         id: 'bolk',
@@ -367,7 +362,7 @@ const en: Dictionary = {
         sector: 'Foodtech, vending machines',
         figure: '+25%',
         figureLabel: 'performance',
-        text: 'Meals served faster thanks to asynchronous processing. Contracts unlocked with TF1 and Le Méridien.',
+        text: 'Meals served faster thanks to asynchronous processing, and contracts unlocked with TF1 and Le Méridien.',
       },
       {
         id: 'france-tv',
@@ -375,7 +370,7 @@ const en: Dictionary = {
         sector: 'Media',
         figure: '4 apps',
         figureLabel: '1 single login',
-        text: 'Shared login interface for Okoo, Slash, France TV and Lumni, through the Gigya API.',
+        text: 'One login interface for Okoo, Slash, France TV and Lumni, through the Gigya API.',
       },
       {
         id: 'spaycial',
@@ -391,7 +386,7 @@ const en: Dictionary = {
         sector: 'Energy, Mauritius',
         figure: '+50,000',
         figureLabel: 'downloads',
-        text: 'App built from scratch for CEB, the Mauritius electricity company, at Agileum.',
+        text: 'App designed from scratch for CEB, the Mauritius electricity company.',
       },
     ],
     next: {
@@ -401,8 +396,8 @@ const en: Dictionary = {
     },
   },
   services: {
-    title: 'Services',
-    proofLabel: 'At',
+    title: 'What I bring',
+    proofLabel: 'Delivered for',
     items: [
       {
         icon: 'card',
@@ -446,65 +441,60 @@ const en: Dictionary = {
   about: {
     title: 'About',
     paragraphs: [
-      'I design apps and back-offices connected to third-party APIs: payments, authentication, document management, notifications, analytics. And I scale the ones that start to crack.',
-      'I started out in Mauritius, in virtual reality and then on consumer apps, before working on large-scale French products. I work with TDD, DDD and Clean Architecture.',
+      'As an independent developer, I design apps and back-offices connected to third-party APIs: payments, authentication, document management, notifications, analytics. And I scale the ones that start to crack.',
+      'My clients get a single point of contact, from architecture to production, who measures the impact of what he ships. I work with TDD, DDD and Clean Architecture.',
+      'I started out in Mauritius, in virtual reality and then on consumer apps, before supporting large-scale French products.',
     ],
     facts: [
+      { label: 'Status', value: 'Independent (sole proprietorship)' },
       { label: 'Languages', value: 'French, English, Mauritian Creole, Malagasy' },
       { label: 'Education', value: 'Bachelor in computer science and network security (2015 to 2017)' },
     ],
   },
   career: {
-    title: 'Career',
+    title: 'Missions',
     items: [
       {
         period: '07/2025 → today',
         company: 'Elmut',
-        role: 'Next.js / NestJS developer',
-        text: 'Cross-functional role on what drives the business: subscriptions, payments, unpaid orders, one-off orders, vouchers, customer area.',
+        role: 'Freelance, Next.js / NestJS',
+        text: 'Cross-functional mission on what drives the business: subscriptions, payments, unpaid orders, one-off orders, vouchers, customer area.',
         stack: 'Next.js, NestJS, TypeScript, Stripe, PostgreSQL, Redis, Turborepo, Docker, Terraform, PostHog',
       },
       {
         period: '06/2024 → 07/2025',
         company: 'Emeria Technologies',
-        role: 'Node.js / NestJS backend developer',
+        role: 'Freelance, Node.js / NestJS backend',
         text: 'Billing and property management, Okta authentication, document management, data sync, PDF invoice reading with LLMs, feature flags.',
         stack: 'Node.js, NestJS, React, MongoDB, PostgreSQL, Snowflake, RabbitMQ, AWS SNS/SQS, Temporal, OpenAI, Anthropic, Gemini',
       },
       {
         period: '09/2023 → 03/2024',
         company: 'Planity',
-        role: 'Full stack developer',
+        role: 'Full stack, payments',
         text: 'Stripe Payment Link through AWS Lambda, appointment platform, SQL optimization, squad roadmap.',
         stack: 'Node.js, AWS Lambda, Firebase Functions, React, Elasticsearch, PostgreSQL, DynamoDB',
       },
       {
         period: '01/2023 → 07/2023',
         company: 'Bolk',
-        role: 'Lead developer',
+        role: 'Tech lead',
         text: '9 real-time embedded systems, subsidy algorithm for B2B clients, technical roadmap, back-office permissions.',
         stack: 'Node.js, TypeScript, Socket.IO, Vue.js, PostgreSQL, Grafana, Docker, AWS',
       },
       {
         period: '11/2019 → 12/2022',
-        company: 'Celaneo',
-        role: 'Full stack developer for France TV, TheFork, Spaycial',
+        company: 'France TV, TheFork, Spaycial',
+        role: 'Full stack, through Celaneo',
         text: 'Back for front, PSD2 API integration across several banks, availability management for restaurants, technical architectures.',
         stack: 'Node.js, React, TypeScript, MongoDB, PostgreSQL, Elasticsearch, RabbitMQ, Redis, AWS, Docker',
       },
       {
         period: '07/2017 → 10/2019',
-        company: 'Agileum',
-        role: 'Full stack developer',
-        text: 'MoKouran for CEB, 5 back-offices, POS app integrated with Simphony Oracle, Jenkins and Docker CI/CD.',
+        company: 'CEB',
+        role: 'Full stack, through Agileum',
+        text: 'MoKouran app, 5 back-offices, POS app integrated with Simphony Oracle, Jenkins and Docker CI/CD.',
         stack: 'Node.js, React, Angular, PostgreSQL, MongoDB, Oracle, Twilio, Docker, Jenkins',
-      },
-      {
-        period: '07/2016 → 06/2017',
-        company: 'EON Reality',
-        role: 'Virtual and augmented reality intern',
-        text: 'Augmented reality app for a hotel, simulations for immersive systems (Kinect, Leap Motion, iDome).',
-        stack: 'JavaScript, Unity (C#), EON Studio, 3DS Max, GLSL',
       },
     ],
   },
@@ -516,7 +506,7 @@ const en: Dictionary = {
     location: 'Paris region, France',
     calendlyLabel: 'Book a slot on Calendly',
   },
-  footer: 'Olaf Ranaivoson. All rights reserved.',
+  footer: 'Olaf Ranaivoson, freelance developer. All rights reserved.',
 };
 
 /** French typography: non-breaking space before : ? ! ; % € and inside thousands. */
